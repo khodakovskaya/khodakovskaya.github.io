@@ -2,6 +2,7 @@ body {
 	   background-color: #211f21;
      margin: 0;
 }
+
 .top {
     background-image: url(../img/bg_img.jpg);
     width: 100%;
@@ -9,17 +10,20 @@ body {
     background-position: center;
     padding: 50px 0;
 }
+
 h1 {
 	  font-size: 16pt;
 	  font-family: 'Roboto Mono', monospace;
 	  text-align: center;
 	  color: white;
 }
- .title {
+
+.title {
     width: 500px;
     border: 2px solid white;
     margin: 60px auto;
 }
+
 .cont-block { 
     width: 900px; 
     color: white;
@@ -28,9 +32,11 @@ h1 {
     text-align: left;
     margin: 20px auto
 }
+
 .margin-block {
 	  margin: 20px auto;
 }
+
 .input-block { 
     width: 900px; 
     color: white;
@@ -39,28 +45,35 @@ h1 {
     text-align: center;
     margin: 20px auto
 }
+
 p {
 	  display: inline-block;
 	  width: 33%;
 	  text-align: center;
 }
+
 #left {
 	  float:right;
 }
+
 #right {
 	  float:left;
 }
+
 .center_button {
 	  margin: 0 auto;
 	  display: block;
 }
+
 .bottom {
     margin: 50px auto;	
 }
+
 ul {
     text-align: center;
     padding: 0;
 }
+
 li {
 	  list-style-type: none;
 	  display: inline;

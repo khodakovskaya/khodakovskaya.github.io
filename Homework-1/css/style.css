@@ -84,4 +84,5 @@ li {
 a {
 	text-decoration: none;
 	height: inherit;
+	display: inline-block;
 }

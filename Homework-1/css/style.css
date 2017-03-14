@@ -5,7 +5,7 @@ body {
 
 .wrapper {
 		width: 1024px;
-		margin: 0 auto;	
+		margin: 0 auto;
 }
 
 .top {
@@ -81,7 +81,7 @@ li {
 	  padding: 4px;
 }
 
-/*a {
-	display: block;
+a {
+	text-decoration: none;
 	height: inherit;
-}*/
+}

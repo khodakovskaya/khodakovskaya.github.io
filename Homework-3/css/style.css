@@ -78,11 +78,27 @@ aside {
 
 section {
   margin-top: 40px;
-  float: right;
+  margin-left: 290px;
 }
 
 .img-frame {
   width: 676px;
   height: 398px;
   border: 1px solid #c8c8c8;
+  position: relative;
+}
+
+.img-frame img {
+  position: absolute;
+  top: 13%;
+  left: 13%;
+}
+
+p {
+  font-size: 13px;
+  line-height: 21px;
+  font-family: 'OpenSans Regular', sans-serif;
+  color: #2c2c2c;
+  align: left;
+  margin-top: 40px;
 }

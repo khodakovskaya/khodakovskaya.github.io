@@ -3,11 +3,11 @@ body {
 }
 
 .container {
-  width: 1060px;
+  width: 966px;
   height: 100%;
   background-color: white;
   margin: 0 auto;
-  padding: 50px 46px 60px 46px;
+  padding: 50px 48px 60px 48px;
 }
 
 .top-menu {
@@ -39,35 +39,50 @@ body {
   border-right: 1px solid transparent;
 }
 
-li a:hover {
+.top-menu li a:hover {
   background-image: url(../img/bg_menu_hover.jpg);
   border-left: 1px solid #838383;
   border-right:  1px solid #838383;
 }
 
 aside {
-  float: left;
   width: 240px;
   margin-top: 40px;
+  float: left;
 }
 
 .aside-menu {
   list-style: none;
 }
 
-.aside-menu li {
-  border-top: 1px solid #c8c8c8;
-  border-left: 1px solid #c8c8c8;
-  border-right: 1px solid #c8c8c8;
-  height: 38px;
-}
-
 .aside-menu li a {
-  font-size: 15px;
+  font-size: 13px;
   font-family: 'OpenSans Regular', sans-serif;
   text-decoration: none;
   color: #656363;
-  padding-top: 16px;
-  padding-left: 23px;
-  vertical-align: middle;
+  padding: 16px 23px;
+  display: block;
+  border: 0 solid #c8c8c8;
+  border-width: 1px 1px 0 1px;
+}
+
+.aside-menu li a:hover {
+  background-color: #f9f9f9;
+  color: #2c2c2c;
+  padding-left: 35px;
+}
+
+.aside-menu li:last-of-type a {
+  border-width: 1px 1px 1px 1px;
+}
+
+section {
+  margin-top: 40px;
+  float: right;
+}
+
+.img-frame {
+  width: 676px;
+  height: 398px;
+  border: 1px solid #c8c8c8;
 }

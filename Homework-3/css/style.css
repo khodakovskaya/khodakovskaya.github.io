@@ -1,5 +1,6 @@
 body {
   background-color: #f9f9f9;
+  font-family: 'OpenSans Regular', sans-serif;
 }
 
 .container {
@@ -8,6 +9,13 @@ body {
   margin: 0 auto;
   padding: 50px 48px 60px 48px;
   background-color: white;
+}
+
+.logo {
+  color: #292929;
+  font-size: 52px;
+  font-weight: 300;
+  text-decoration: none;
 }
 
 .top-menu {
@@ -33,7 +41,6 @@ body {
   border-right: 1px solid transparent;
   color: white;
   font-size: 15px;
-  font-family: 'OpenSans Regular', sans-serif;
   text-decoration: none;
 }
 
@@ -60,7 +67,6 @@ aside {
   border-width: 1px 1px 0 1px;
   color: #656363;
   font-size: 13px;
-  font-family: 'OpenSans Regular', sans-serif;
   text-decoration: none;
 }
 
@@ -88,8 +94,9 @@ section {
 
 .img-frame img {
   position: absolute;
-  top: 13%;
-  left: 13%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 p {
@@ -97,7 +104,6 @@ p {
   color: #2c2c2c;
   font-size: 13px;
   line-height: 21px;
-  font-family: 'OpenSans Regular', sans-serif;
 }
 
 .footer {
@@ -120,7 +126,6 @@ p {
   padding: 11px 25px;
   color: #2c2c2c;
   font-size: 15px;
-  font-family: 'OpenSans Regular', sans-serif;
   text-decoration: none;
 }
 
@@ -138,6 +143,5 @@ p {
   float: right;
   color: #2c2c2c;
   font-size: 15px;
-  font-family: 'OpenSans Regular', sans-serif;
   text-decoration: none;
 }

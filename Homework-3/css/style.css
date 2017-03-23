@@ -9,6 +9,7 @@ body {
   margin: 0 auto;
   padding: 50px 48px 60px 48px;
   background-color: white;
+  box-shadow: 0 0 3px 4px #dbdbdb;
 }
 
 .logo {
@@ -42,6 +43,7 @@ body {
   color: white;
   font-size: 15px;
   text-decoration: none;
+  text-shadow: 1px -1px 2px #2b2b2b;
 }
 
 .top-menu li a:hover {

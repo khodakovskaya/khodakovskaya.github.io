@@ -106,12 +106,17 @@ p {
   line-height: 21px;
 }
 
-.footer {
-  height: 40px;
+footer {
   background: #e1e1e1;
+}
+
+.footer {
+  display: inline-block;
+  height: 40px;
   font-size: 0;
   line-height: 0;
   letter-spacing: -1px;
+
 }
 
 .footer li {
@@ -137,11 +142,8 @@ p {
   text-decoration: underline;
 }
 
-.footer li:last-of-type {
-  position: relative;
-  padding: 11px 25px;
+span {
   float: right;
-  color: #2c2c2c;
-  font-size: 15px;
-  text-decoration: none;
+  padding: 12px 25px;
+  height: 40px;
 }

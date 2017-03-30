@@ -1,0 +1,77 @@
+body {
+  background-image: url(../img/bg.png);
+  font-family: 'Tahoma Regular', sans-serif;
+}
+
+.container {
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+  margin-bottom: 34px;
+  /*padding: 50px 48px 60px 48px;*/
+  background-color: white;
+  box-shadow: 0 0 5px 1px #2b2b2b;
+}
+
+header {
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.clearfix:after {
+  content: ' ';
+  clear: both;
+  display: block;
+}
+
+.logo {
+  width: auto;
+}
+
+.logo img {
+  float: left;
+  margin-top: 11px;
+  margin-left: 28px;
+}
+
+.logo p {
+  position: absolute;
+  padding-top: 110px;
+  padding-left: 90px;
+  color: #128aa7;
+}
+
+.contacts {
+  float: right;
+  color: #128aa7;
+  margin-top: 11px;
+  margin-right: 38px;
+}
+
+.contacts a {
+  color: #128aa7;
+  text-decoration: none;
+}
+
+ul {
+  float: right;
+  list-style: none;
+  margin-top: 120px;
+}
+
+ul li {
+    /*float: right;*/
+    display: inline-block;
+    margin-right: 8px;
+    z-index: 1;
+}
+
+ul li a {
+  color: #128aa7;
+  text-decoration: underline;
+}
+
+ul li a img {
+  display: block;
+  vertical-align: middle;
+}

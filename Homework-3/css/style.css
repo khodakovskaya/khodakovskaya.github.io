@@ -129,11 +129,9 @@ footer {
 
 .footer {
   display: inline-block;
-  /*height: 40px;*/
   font-size: 0;
   line-height: 0;
   letter-spacing: -1px;
-
 }
 
 .footer li {

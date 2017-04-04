@@ -111,22 +111,21 @@ header {
 }
 
 .top-menu {
-  position: relative;
-  list-style: none;
+  /*position: relative;*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   height: 30px;
-  padding-top: 8px;
   margin-top: -3px;
+  list-style: none;
   background-image: url(../img/bg_top-menu.png);
-  border-color: transparent;
   box-shadow: 0 1px 3px 1px #2b2b2b;
 }
 
 .top-menu li {
   display: inline-block;
   position: relative;
-  float: left;
-  width: 12%;
-  margin-left: 2%;
   text-align: center;
 }
 
@@ -136,6 +135,7 @@ header {
   top: 30px;
   left: 0;
   width: 150px;
+  margin-top: -6px;
   background-color: #2b2b2b;
   box-shadow: 0 1px 3px 1px #2b2b2b;
 }
@@ -145,7 +145,6 @@ header {
 }
 
 .top-menu li a {
-  padding: 9px;
   color: white;
   font-size: 14px;
   font-weight: 100;
@@ -155,7 +154,7 @@ header {
 .top-menu li .submenu li {
   float: none;
   display: block;
-  padding: 8px 5px;
+  padding: 3px 9px;
   text-align: left;
 }
 

@@ -105,44 +105,29 @@ header {
   background-image: url(../img/f-maldivy.jpg);
 }
 
-/*.flags li a img {
-  position: relative;
-  display: block;
-  margin: auto;
-}*/
-
 #photo {
   border-top: 1px solid #128aa7;
   border-bottom: 1px solid #128aa7;
 }
 
 .top-menu {
+  position: relative;
   list-style: none;
   height: 30px;
-  width: 100%;
-  top: 50%;
+  padding-top: 8px;
   margin-top: -3px;
-  /*background-image: url(../img/bg_top-menu.png);*/
-  background-color: #2b2b2b;
+  background-image: url(../img/bg_top-menu.png);
+  border-color: transparent;
   box-shadow: 0 1px 3px 1px #2b2b2b;
-
 }
 
 .top-menu li {
-  /*display: inline-block;*/
+  display: inline-block;
   position: relative;
   float: left;
   width: 12%;
   margin-left: 2%;
   text-align: center;
-}
-
-.top-menu li a {
-  padding: 9px;
-  color: white;
-  font-size: 14px;
-  font-weight: 100;
-  text-decoration: none;
 }
 
 .top-menu li .submenu {
@@ -155,12 +140,27 @@ header {
   box-shadow: 0 1px 3px 1px #2b2b2b;
 }
 
-.top-menu li a:hover .submenu {
+.top-menu li:hover .submenu {
   display: block;
+}
+
+.top-menu li a {
+  padding: 9px;
+  color: white;
+  font-size: 14px;
+  font-weight: 100;
+  text-decoration: none;
 }
 
 .top-menu li .submenu li {
   float: none;
   display: block;
-  background: none;
+  padding: 8px 5px;
+  text-align: left;
+}
+
+.top-menu li .submenu li a {
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
 }

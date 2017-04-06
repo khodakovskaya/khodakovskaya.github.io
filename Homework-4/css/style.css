@@ -13,28 +13,29 @@ body {
 }
 
 header {
-  height: 175px;
   font-size: 12px;
 }
 
 .clearfix:after {
-  content: ' ';
-  clear: both;
-  display: block;
+  content: ".";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
 }
 
 .logo {
-  width: auto;
-}
-
-.logo img {
+  position: relative;
   float: left;
   margin-top: 11px;
   margin-left: 28px;
 }
 
-.logo p {
+.logo img {
   position: absolute;
+}
+
+.logo p {
   padding-top: 110px;
   padding-left: 90px;
   color: #128aa7;
@@ -106,8 +107,10 @@ header {
 }
 
 #photo {
+  clear: both;
   border-top: 1px solid #128aa7;
   border-bottom: 1px solid #128aa7;
+  height: 237px;
 }
 
 .top-menu {
@@ -117,7 +120,7 @@ header {
   justify-content: space-around;
   align-items: center;
   height: 30px;
-  margin-top: -3px;
+  /*margin-top: -3px;*/
   list-style: none;
   background-image: url(../img/bg_top-menu.png);
   box-shadow: 0 1px 3px 1px #2b2b2b;

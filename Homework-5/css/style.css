@@ -86,11 +86,7 @@ form {
   margin: 0 auto;
 }
 
-fieldset {
-  /*border-left: none;
-  border-bottom: none;
-  border-right: none;*/
-  margin: 0 auto;
+.container {
   color: white;
   font-size: 24px;
 }
@@ -103,10 +99,52 @@ h1 {
   border-bottom: 2px solid #fff;
 }
 
-fieldset a {
+.container a {
   display: inline-block;
   padding: 35px 142px;
   /*margin: 0 auto;
   text-align: center;*/
+}
 
+fieldset {
+  width: 267px;
+  border-top: 1px solid #fff;
+  margin: 0 auto;
+}
+
+legend {
+  padding: 0 10px;
+  font-size: 18px;
+  text-align: center;
+}
+
+input[type="text"]{
+  color: #ccc;
+  background-color: #0f0f0f;
+  border: none;
+  width: 267px;
+  padding: 7px 15px;
+  font-size: 14px;
+}
+
+input[type="text"]:focus,
+input[type="text"]:hover{
+  background-color: #1b5288;
+  box-shadow: 0 0 5px 3px #689bcc;
+}
+
+.checkbox {
+  margin-right: 10px;
+}
+
+p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+button {
+  background-image: url(../img/create-button.png);
+  font-size: 14px;
+  color: #fff;
 }

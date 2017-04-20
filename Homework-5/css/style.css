@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneue-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+  font-family: 'Helvetica Neue'
+}
+
+header {
+  height: 36px;
+  background-color: #07508f;
+  color: #fff;
+  font-size: 12px;
+}
+
+.login {
+  float: right;
+  background-image: url(../img/bg-login.jpg);
+  padding: 0 12px;
+  margin-right: 20px;
+}
+
+.login a {
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  color: #fff;
+}
+
+.flag {
+  float: right;
+  line-height: 36px;
+  padding: 0 18px;
+  border-left: 1px solid #4eabda;
+}
+
+.top-menu {
+  float: right;
+}
+
+.top-menu li {
+  display: inline-block;
+  color: #4eabda;
+  padding: 0 5px;
+}
+
+.top-menu li a {
+  display: inline-block;
+  height: 36px;
+  padding: 0 5px;
+  line-height: 36px;
+  text-decoration: none;
+  color: #4eabda;
+}
+
+.top-menu li a:hover,
+.top-menu li a:focus  {
+  background-color: #4eabda;
+  color: #fff;
+  padding: 0 5px;
+
+}
+
+.wrapper {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  top: 36px;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  background-image: url(../img/bg-img.jpg);
+}
+
+form {
+  width: 560px;
+  height: 615px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+}
+
+fieldset {
+  /*border-left: none;
+  border-bottom: none;
+  border-right: none;*/
+  margin: 0 auto;
+  color: white;
+  font-size: 24px;
+}
+
+h1 {
+  height: 60px;
+  width: 100%;
+  text-align: center;
+  line-height: 60px;
+  border-bottom: 2px solid #fff;
+}
+
+fieldset a {
+  display: inline-block;
+  padding: 35px 142px;
+  /*margin: 0 auto;
+  text-align: center;*/
+
+}

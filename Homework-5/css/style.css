@@ -87,6 +87,7 @@ header {
   justify-content: center;
   overflow: auto;
   background-image: url(../img/bg-img.jpg);
+  background-repeat: no-repeat;
 }
 
 form {

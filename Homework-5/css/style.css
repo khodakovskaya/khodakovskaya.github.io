@@ -11,19 +11,19 @@ body {
 }
 
 header {
-  height: 36px;
+  height: 100%;
   background-color: #07508f;
   color: #fff;
   font-size: 12px;
 }
 
-/*.clearfix:after {
+.clearfix:after {
   content: ".";
 	visibility: hidden;
 	display: block;
 	height: 0;
 	clear: both;
-}*/
+}
 
 .login {
   float: right;
@@ -42,12 +42,16 @@ header {
 .flag {
   float: right;
   line-height: 36px;
-  padding: 0 18px;
+  padding-right: 18px;
+  padding-left: 40px;
   border-left: 1px solid #4eabda;
+  background-image: url(../img/flag.png);
+  background-repeat: no-repeat;
 }
 
 .top-menu {
   float: right;
+  background-color: #07508f;
 }
 
 .top-menu li {
@@ -70,7 +74,6 @@ header {
   background-color: #4eabda;
   color: #fff;
   padding: 0 5px;
-
 }
 
 .wrapper {
@@ -94,6 +97,7 @@ form {
 }
 
 .container {
+  min-height: 700px;
   color: white;
   font-size: 24px;
 }
@@ -144,7 +148,7 @@ input[type="text"]:hover{
 }
 
 .checkbox {
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 p {

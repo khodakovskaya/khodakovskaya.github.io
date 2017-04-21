@@ -4,7 +4,6 @@
          url('../fonts/helveticaneue-thin-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 body {
@@ -17,6 +16,14 @@ header {
   color: #fff;
   font-size: 12px;
 }
+
+/*.clearfix:after {
+  content: ".";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}*/
 
 .login {
   float: right;
@@ -100,10 +107,13 @@ h1 {
 }
 
 .container a {
-  display: inline-block;
-  padding: 35px 142px;
-  /*margin: 0 auto;
-  text-align: center;*/
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+}
+.container a img {
+  display: block;
+  margin: 0 auto;
 }
 
 fieldset {
@@ -143,8 +153,23 @@ p {
   color: #ccc;
 }
 
-button {
-  background-image: url(../img/create-button.png);
-  font-size: 14px;
+fieldset a {
   color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.button {
+  width: 152px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 37px;
+  background-image: url(../img/create-button.png);
+}
+
+span {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  line-height: normal;
 }

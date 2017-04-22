@@ -7,10 +7,13 @@
 }
 
 body {
-  font-family: 'Helvetica Neue'
+  font-family: 'Helvetica Neue';
+  display: flex;
+  /*min-height: 100vh;*/
+	flex-direction: column;
 }
 
-header {
+nav {
   height: 100%;
   background-color: #07508f;
   color: #fff;
@@ -24,6 +27,11 @@ header {
 	height: 0;
 	clear: both;
 }
+
+.gradient {
+    background: linear-gradient(to top, #2e7ac4, #51b1dc );
+    border: 1px solid #509fd9  ;
+   }
 
 .login {
   float: right;
@@ -77,58 +85,57 @@ header {
 }
 
 .wrapper {
-  position: fixed;
-  display: flex;
   width: 100%;
   height: 100%;
-  top: 36px;
-  left: 0;
-  align-items: center;
-  justify-content: center;
-  overflow: auto;
+  display: flex;
+	flex-direction: row;
   background-image: url(../img/bg-img.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
 }
+
 
 form {
   width: 560px;
-  height: 615px;
-  background-color: rgba(0, 0, 0, 0.5);
-  margin: 0 auto;
-}
-
-.container {
-  min-height: 700px;
-  color: white;
-  font-size: 24px;
+  margin: 200px auto;
 }
 
 h1 {
-  height: 60px;
-  width: 100%;
+  width: 560px;
   text-align: center;
   line-height: 60px;
-  border-bottom: 2px solid #fff;
+  margin: auto;
+  color: white;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  color: white;
+  font-size: 24px;
+  margin-top: 2px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .container a {
   display: block;
-  width: 100%;
-  margin: 30px auto;
+  margin: 0 auto;
 }
 .container a img {
   display: block;
   margin: 0 auto;
+  padding: 30px;
 }
 
 fieldset {
   width: 267px;
-  border-top: 1px solid #fff;
+  border-top: 2px ridge #666;
   margin: 0 auto;
 }
 
 legend {
   padding: 0 10px;
+  color: #999;
   font-size: 18px;
   text-align: center;
 }
@@ -149,7 +156,7 @@ input[type="text"]:hover{
 }
 
 .checkbox {
-  margin-right: 5px;
+  margin: 3px 5px;
 }
 
 p {
@@ -164,17 +171,25 @@ fieldset a {
   font-size: 14px;
 }
 
+.create {
+  width: 154px;
+}
+
 .button {
-  width: 152px;
-  margin: 0 auto;
+  margin: 30px auto;
   text-align: center;
   line-height: 37px;
-  background-image: url(../img/create-button.png);
+  background: linear-gradient(to top, #2e7ac4, #51b1dc );
+  border: 1px solid #509fd9;
+  border-radius: 3px;
 }
 
 span {
   display: block;
+  width: 320px;
   text-align: center;
   font-size: 12px;
   line-height: normal;
+  margin: auto;
+  padding-bottom: 30px;
 }

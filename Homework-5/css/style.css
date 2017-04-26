@@ -6,6 +6,23 @@
     font-style: normal;
 }
 
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body {
   font-family: 'Helvetica Neue';
   display: flex;
@@ -109,6 +126,25 @@ h1 {
   font-size: 18px;
   background-color: rgba(0, 0, 0, 0.5);
 }
+
+.facebook {
+  width: 275px;
+  height: 33px;
+  margin-top: 30px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 33px;
+  color: white;
+  font-size: 14px;
+  background: linear-gradient(to top, #2d3f6f, #2e7ac4 );
+  border-radius: 3px;
+}
+
+/*.facebook a {
+  display: block;
+  margin: 30px auto;
+  text-decoration: none;
+}*/
 
 .container {
   color: white;

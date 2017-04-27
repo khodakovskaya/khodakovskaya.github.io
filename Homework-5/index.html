@@ -5,6 +5,7 @@
     <title>Cadastre</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://use.fontawesome.com/2488b1845d.js"></script>
   </head>
   <body>
     <nav class="clearfix">
@@ -26,9 +27,14 @@
       <form action="#">
         <h1>Cadastre-se</h1>
         <div class="container">
-          <a href="#" class="facebook">
-            <i class="fa Log In with Facebook" aria-hidden="true"></i>Log In with Facebook
-          </a>
+          <div class="facebook-btn">
+           <i class="fa fa-facebook facebook-btn__icon" aria-hidden="true"></i>
+           <a href="https://www.facebook.com" target="_blank" class="facebook-btn__link">
+             <span class="facebook-btn__text-bold">Log In</span> with
+             <span class="facebook-btn__text-bold">Facebook</span>
+             <i class="fa fa-angle-right fa-lg facebook-btn__arrow"></i>
+           </a>
+          </div>
           <fieldset>
             <legend>UO</legend>
             <p><input type="text" class="text" placeholder="First name">
@@ -48,8 +54,8 @@
               <div class="button">Create my Account</div>
             </a>
           </fieldset>
-          <span>By clicking the button above, you agree to the Terms of Service
-Xiew our Privacy Policy.</span>
+          <div class="text-down">By clicking the button above, you agree to the Terms of Service
+Xiew our Privacy Policy.</div>
         </div>
       </form>
 

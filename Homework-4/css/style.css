@@ -7,7 +7,6 @@ body {
   width: 1000px;
   height: 100%;
   margin: 0 auto;
-  /*margin-bottom: 34px;*/
   background-color: white;
   box-shadow: 0 0 5px 1px #2b2b2b;
 }
@@ -27,19 +26,14 @@ header {
 .logo {
   position: relative;
   display: inline-block;
-  width: 350px;
   margin-top: 11px;
   margin-left: 28px;
 }
 
-.logo img {
-  position: absolute;
-}
-
 .logo p {
   position: absolute;
-  padding-top: 110px;
-  padding-left: 90px;
+  top: 70%;
+  left: 50%;
   color: #128aa7;
 }
 

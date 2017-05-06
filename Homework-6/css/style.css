@@ -1,9 +1,39 @@
 @font-face {
-    font-family: 'Lucida Sans Unicoderegular';
+    font-family: 'Lucida Sans';
     src: url('../fonts/lucida_sans_unicode_regular-webfont.woff2') format('woff2'),
          url('../fontslucida_sans_unicode_regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lucida Sans';
+	src: url('LucidaSans-Bold.eot');
+	src: url('LucidaSans-Bold.eot?#iefix') format('embedded-opentype'),
+		url('LucidaSans-Bold.woff2') format('woff2'),
+		url('LucidaSans-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyriadPro';
+    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
+    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+    url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'MyriadPro';
+    src: url("../fonts/MyriadProRegular/MyriadProBoldItalic.eot");
+    src: url("../fonts/MyriadProRegular/MyriadProBoldItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProRegular/MyriadProBoldItalic.woff") format("woff"),
+    url("../fonts/MyriadProRegular/MyriadProBoldItalic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: bold;
 }
 
 body {
@@ -11,7 +41,7 @@ body {
   flex-direction: column;
   margin: 0 auto;
   max-width: 915px;
-  font-family: 'Lucida Sans Unicoderegular', Arial;
+  font-family: 'Lucida Sans', Arial;
 }
 
 /*.clearfix:after {
@@ -33,14 +63,14 @@ header {
 .top-nav {
   display: flex;
   justify-content: space-between;
-  margin: 7px auto;
+  margin: 7px 2px;
   line-height: 26px;
 }
 
 .contacts {
   color: #5e696d;
   font-size: 16px;
-  padding-left: 33px;
+  padding-left: 27px;
   background-image: url(../img/ico-phone.png);
   background-repeat: no-repeat;
 }
@@ -69,14 +99,15 @@ input[type="text"] {
   font-size: 11px;
 }
 
-.authoriz a {
+.login-links {
   margin: 0 5px;
   color: #fff;
   text-decoration: none;
 }
 
 .forgot-pass {
-  float: right;
+  /*float: right;*/
+  padding-left: 10px;
   color: #97a2a6;
   text-decoration: underline;
 }
@@ -85,8 +116,8 @@ input[type="text"] {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 75px;
   height: 19px;
+  padding: 1px 5px;
   margin: 0 5px;
   border: 1px solid #c1c7ca;
   border-radius: 9px;
@@ -160,82 +191,182 @@ input[type="text"] {
   align-items: stretch;
   max-width: 915px;
   font-size: 14px;
+  margin-top: 16px;
 }
 
 .left-bar {
   display: inline-block;
   flex-grow: 1;
-  padding: 20px;
   color: #424c43;
   line-height: 22px;
   }
 
-.content-bar {
-  flex-grow: 2;
-  padding: 20px;
+  .aside-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 181px;
+    margin-top: 4px;
+    font-size: 12px;
+    color: #114165;
+    border: 1px solid #8b979c;
+    border-radius: 12px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+  }
 
+  .catalog {
+    content: ' ';
+    width: 22px;
+    height: 22px;
+    margin: 2px;
+    background-image: url(../img/ico-catalog.png);
+    background-repeat: no-repeat;
+  }
+
+  .section-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 148px;
+    margin-top: 12px;
+    margin-left: 2px;
+    font-size: 14px;
+    color: #114165;
+    border: 1px solid #8b979c;
+    border-radius: 15px;
+
+  }
+
+  .disc {
+    content: ' ';
+    width: 23px;
+    height: 23px;
+    margin: 4px;
+    background-image: url(../img/ico-disc.png);
+    background-repeat: no-repeat;
+  }
+
+  .submenu {
+    margin-top: 5px;
+    margin-left: 15px;
+    font-size: 13px;
+    line-height: 23px;
+  }
+
+  .submenu-item  {
+    display: flex;
+    align-items: center;
+    color: #465961;
+    text-decoration: none;
+  }
+
+  .submenu-item:hover,
+  .submenu-item:focus  {
+    color: #0c3256;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .submenu-item::before {
+    display: block;
+    content: ' ';
+    border: 2px solid #465961;
+    width: 4px;
+    height: 4px;
+    border-radius: 4px;
+    margin: 5px;
+  }
+
+.content-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-grow: 2;
+  margin: 0 9px;
+  padding: 11px;
+  /*width: 526px;*/
+  background-image: linear-gradient(to top, #93a7b0, #e5e7e8);
+}
+
+.content-item {
+  display: flex;
+  flex-direction: column;
+  margin: 11px;
+}
+
+.link-content-item {
+  text-decoration: none;
+}
+
+.content-item-photo {
+  display: flex;
+  width: 136px;
+  height: 136px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  background-color: #fff;
+  border: 1px solid #b0b9bc;
+  border-radius: 7px;
+}
+
+.content-item-photo img {
+  width: auto;
+  height: auto;
+  margin: auto;
+}
+
+.content-item-pre {
+  font-family: 'MyriadPro', Arial;
+  font-size: 16px;
+  text-align: center;
+  color: #206988;
+  text-decoration: none;
+}
+
+.span-item {
+  color: #114165;
+}
+
+.content-item-after {
+  font-family: 'MyriadPro', Arial;
+  color: #114165;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none;
 }
 
 .right-bar {
   flex-grow: 1;
-  padding: 20px;
   color: #424c43;
   line-height: 22px;
 }
 
-.aside-title {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 181px;
-  margin-top: 4px;
+/*.checkbox {
+  margin: 3px 5px;
+}*/
+
+.check-menu {
+  margin-top: 5px;
+  margin-left: 10px;
+  font-size: 13px;
+  line-height: 23px;
+}
+
+.submit {
   font-size: 12px;
-  color: #114165;
-  border: 1px solid #8b979c;
-  border-radius: 12px;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
-}
-
-.catalog {
-  content: ' ';
-  width: 22px;
-  height: 22px;
-  margin: 2px;
-  background-image: url(../img/ico-catalog.png);
-  background-repeat: no-repeat;
-}
-
-.section-title {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 148px;
-  margin-top: 12px;
-  margin-left: 2px;
-  font-size: 14px;
-  color: #114165;
-  border: 1px solid #8b979c;
-  border-radius: 15px;
-
-}
-
-.disc {
-  content: ' ';
-  width: 23px;
-  height: 23px;
-  margin: 4px;
-  background-image: url(../img/ico-disc.png);
-  background-repeat: no-repeat;
-}
-
-.submenu {
-  margin-top: 10px;
-  margin-left: 45px;
-  font-size: 12px;
-  line-height: 25px;
-}
-
-.submenu li a {
-  color: #465961;
+  color: #fff;
   text-decoration: none;
+}
+
+.button {
+  width: 80px;
+  margin: 10px auto;
+  text-align: center;
+  line-height: 26px;
+  background: linear-gradient(to top, #0c3357, #1f6787);
+  border-radius: 11px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
 }

@@ -37,8 +37,6 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
   margin: 0 auto;
   max-width: 915px;
   font-family: 'Lucida Sans', Arial;
@@ -63,30 +61,46 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  /*margin: 7px 3px 5px 3px;*/
+  padding: 0 3px 0 3px;
+  margin-bottom: 7px;
   line-height: 23px;
 }
 
 .contacts {
+  display: flex;
+  align-items: center;
+}
+
+.i-phone {
+  display: block;
+  width: 22px;
+  height: 21px;
+  background-image: url(../img/ico-phone.png);
+}
+
+.phone-link[href^="tel:"] {
+  padding-left: 7px;
   color: #5e696d;
   font-size: 16px;
-  padding-left: 27px;
-  background-image: url(../img/ico-phone.png);
-  background-repeat: no-repeat;
-  background-position: left center;
+  text-decoration: none;
 }
 
 .authoriz {
   display: flex;
   align-items: center;
   padding: 0 5px 0 5px;
-  margin: 0 0 7px 15px;
   font-size: 11px;
   color: #fff;
   background: linear-gradient(to top, #0c3357, #1f6787);
-  background-repeat: no-repeat;
-  border-radius: 3px;
+  border-radius: 4px;
   box-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+}
+
+.i-cont {
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-image: url(../img/ico-authoriz.png);
 }
 
 input[type="text"] {
@@ -102,17 +116,22 @@ input[type="text"] {
 
 .login-links {
   padding: 0 5px;
-  line-height: 14px;
+  line-height: 13px;
   color: #fff;
   text-decoration: none;
 }
+
+/*.login-links::after {
+  content: "|";
+
+}*/
 
 #separator {
   border-right: 1px solid #fff;
 }
 
 .forgot-pass {
-  padding: 0 5px 0 20px;
+  padding-left: 20px;
   color: #97a2a6;
   text-decoration: underline;
 }
@@ -128,6 +147,7 @@ input[type="text"] {
   border-radius: 12px;
   box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
   font-size: 12px;
+  background-color: white;
 }
 
 .nav-ico {
@@ -173,12 +193,18 @@ input[type="text"] {
 }
 
 .basket {
-  display: inline-block;
-  line-height: 32px;
+  display: flex;
+  align-items: center;
   padding-right: 10px;
   padding-left: 25px;
+}
+
+.basket-ico {
+  display: block;
+  width: 21px;
+  height: 23px;
+  margin: auto 5px;
   background-image: url(../img/ico-basket.png);
-  background-repeat: no-repeat;
 }
 
 .basket p {
@@ -223,7 +249,7 @@ input[type="text"] {
   content: ' ';
   width: 22px;
   height: 22px;
-  margin: 2px;
+  margin: 1px;
   background-image: url(../img/ico-catalog.png);
   background-repeat: no-repeat;
 }
@@ -235,7 +261,7 @@ input[type="text"] {
   width: 148px;
   margin-top: 12px;
   margin-left: 2px;
-  font-size: 14px;
+  font-size: 1s4px;
   color: #114165;
   border: 1px solid #8b979c;
   border-radius: 15px;
@@ -245,7 +271,7 @@ input[type="text"] {
   content: ' ';
   width: 23px;
   height: 23px;
-  margin: 4px;
+  margin: 2px;
   background-image: url(../img/ico-disc.png);
   background-repeat: no-repeat;
 }
@@ -321,6 +347,7 @@ input[type="text"] {
 }
 
 .content-item-pre {
+  margin-bottom: 3px;
   font-family: 'MyriadPro', Arial;
   font-size: 16px;
   text-align: center;
@@ -465,16 +492,29 @@ footer {
   justify-content: center;
 }
 
+.menu-bottom li {
+  display: flex;
+  align-items: center;
+}
+
+.m-bot-item li:after {
+  display: block;
+	content: '';
+	width: 1px;
+	height: 80%;
+	background-color: #bec6c9;
+}
+
+.menu-bottom li:last-child a:after {
+  content: none;
+}
+
 .m-bot-item {
+  display: block;
   padding: 0 12px;
   color: #bec6c9;
   font-size: 12px;
-  border-right: 1px solid #bec6c9;
   text-decoration: none;
-}
-
-.m-bot-item :last-child {
-  border-right: none;
 }
 
 .m-bot-item:hover {

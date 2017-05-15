@@ -114,20 +114,20 @@ input[type="text"] {
   font-size: 11px;
 }
 
-.login-links {
+.login-links,
+.login-links-reg {
   padding: 0 5px;
   line-height: 13px;
   color: #fff;
   text-decoration: none;
 }
 
-/*.login-links::after {
-  content: "|";
-
-}*/
-
-#separator {
-  border-right: 1px solid #fff;
+.login-links-reg::before {
+  display: inline-block;
+  content: '';
+  width: 1px;
+  height: 90%;
+  background-color: #fff;
 }
 
 .forgot-pass {
@@ -497,16 +497,16 @@ footer {
   align-items: center;
 }
 
-.m-bot-item li:after {
+.menu-bottom li:after {
   display: block;
 	content: '';
 	width: 1px;
-	height: 80%;
+	height: 90%;
 	background-color: #bec6c9;
 }
 
-.menu-bottom li:last-child a:after {
-  content: none;
+.menu-bottom li:last-child::after {
+  display: none;
 }
 
 .m-bot-item {

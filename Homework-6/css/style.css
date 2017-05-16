@@ -116,7 +116,6 @@ input[type="text"] {
 
 .login-links,
 .login-links-reg {
-  padding: 0 5px;
   line-height: 13px;
   color: #fff;
   text-decoration: none;
@@ -125,8 +124,9 @@ input[type="text"] {
 .login-links-reg::before {
   display: inline-block;
   content: '';
+  margin: 0 5px;
   width: 1px;
-  height: 90%;
+  height: 11px;
   background-color: #fff;
 }
 

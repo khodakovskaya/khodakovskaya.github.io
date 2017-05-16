@@ -114,8 +114,15 @@ input[type="text"] {
   font-size: 11px;
 }
 
-.login-links,
+.login-links {
+  line-height: 13px;
+  color: #fff;
+  text-decoration: none;
+}
+
 .login-links-reg {
+  display: flex;
+  align-items: center;
   line-height: 13px;
   color: #fff;
   text-decoration: none;
